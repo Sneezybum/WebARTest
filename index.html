@@ -33,6 +33,9 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
+    <a-assets>
+      <a-asset-item id="stadhuis" src="./WebARTest/stadhuis.gltf"></a-asset-item>
+    </a-assets>
     <!-- we use cors proxy to avoid cross-origin problems -->
     <a-nft
       type="nft"
@@ -43,7 +46,7 @@
       smoothThreshold="5"
     >
       <a-entity
-        gltf-model="./WebARTest/stadhuis.gltf"
+        gltf-model="#stadhuis"
         scale="5 5 5"
         position="50 150 0"
       >
